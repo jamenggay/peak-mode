@@ -1,4 +1,4 @@
-PeakMode
+# PeakMode
 PeakMode is a mental well-being and personal growth blog platform where users can Create, Read, Update, and Delete blog posts. It’s designed as a space for sharing insights, strategies, and stories that inspire continuous self-improvement.
 
 About
