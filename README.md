@@ -33,5 +33,5 @@ Express.js – Server-side framework for routing and handling requests
 Follow these steps to run PeakMode locally:
 1. Clone the repository: git clone https://github.com/your-username/peakmode.git
 2. Navigate into the project directory
-3. Install depndenciesL npm install
+3. Install depndencies: npm install
 4. Run the development server: nodemon index.js
