@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+
+}
+p{
+    font-family: "Poppins", sans-serif;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E293B;
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+}
+
+.logo-navbar{
+    width: 39px;
+    height: 38px;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+.title-logo{
+    display: flex;
+    align-items: center;
+  
+}
+.navigations{
+    display: flex;
+    align-items: center;
+}
+.navbar-txt{
+    color: #F8FAFC;
+    font-style: normal;
+    font-size: 20px;
+    margin-right: 75px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.footer{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 450px;
+    background-color: #1E293B;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+.infos{
+    display: flex;
+    padding-top: 35px;
+    margin-left: 4%;
+}
+.logo-footer{
+    height: 55px;
+    width: 55px;
+}
+.title-footer{
+    font-style: normal;
+    font-size: 30px;
+    color: #F8FAFC;
+    font-weight: 400;
+    margin: 0px;
+}
+.title-container{
+    
+    display: flex;
+    flex-direction: column;
+
+  
+}
+.tagline{
+    color: #F8FAFC;
+    font-weight: bold;
+    font-size: 40px;
+    width: 229px;
+    height: 180px;
+    margin-top: 10px;
+    margin-left: 3px;
+}
+.footer-navigations{
+    padding-top: 70px;
+    margin-left: 410px;
+    display: flex;
+    
+}
+.footernav{
+
+   margin-right: 50%;
+}
+.footernav-txt{
+    width: max-content;
+    color: #F8FAFC;
+    font-size: 20px;
+    margin-bottom: 37px;
+    
+}
+.socials{
+    display: flex;
+    margin: 0px;
+    color: #F8FAFC;
+    font-size: 20px;
+    margin-bottom: 37px;
+}
+.img-fb{
+    width: 36px;
+    height: 36px;
+}
+.footernav-socials{
+    margin: 0px;
+    margin-left: 10px ;
+}
+.img-ig{
+    width: 29px;
+    height: 29px;
+    margin-left: 5px;
+}
+.copyright-container{
+    align-self: center;
+    margin-top: 35px;
+}
+.copyright-txt{
+    color: #F8FAFC;
+    font-size: 16px;
+}
+

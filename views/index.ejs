@@ -1,0 +1,57 @@
+<%- include("partials/navbar.ejs") %>
+
+  <main class="main-container">
+    <div class="hero-section">
+      <div class="hero-txt">
+        <h1>Unlock <br>Your Peak <br>Potential</h1>
+        <p class="tagline-desc">Explore expert insights, productivity hacks, and <br>
+          self-improvement strategies.</p>
+        <button class="explore-btn">Explore Blogs</button>
+      </div>
+      <div class="hero-img">
+        <img src="/images/hero-image.jpg" alt="Man-watering-the-mind" />
+      </div>
+    </div>
+    <div class="content-container">
+      <div class="section-title">
+        <span>NEWEST</span>
+      </div>
+      
+      <div class="blogs-row">
+        <% latestBlogs.forEach(function(blog) { %>
+          <div class="blog">
+            <img class="blog-img" src="<%= blog.image %>" alt="Blog Image"/>
+            <p class="blog-date"><%= new Date(blog.date).toLocaleDateString("en-US", {
+              year: "numeric", month: "long", day: "numeric"
+            }) %></p>
+            <p class="blog-title"><%= blog.title %></p> 
+            <a href="/blog/<%= blog.id %>">
+              <button class="btn">SEE MORE</button>
+            </a>      
+          </div>
+        <% }); %>
+      </div>
+
+
+      <div class="section-divider">
+        <div class="star-container">
+          <img class="star" src="/images/star.png" />
+          <img id="star" src="/images/star.png" />
+          <img class="star" src="/images/star.png" />
+        </div>
+      </div>
+    </div>
+
+    <%- include("partials/footer.ejs") %>
+
+
+      <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('success') === 'true') {
+          alert("Blog successfully posted!");
+        }
+
+        document.querySelector('.explore-btn').addEventListener('click', function() {
+          window.location.href = '/blogs';
+        });
+      </script>

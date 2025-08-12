@@ -1,0 +1,223 @@
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #FAFAFA;
+    padding-top: 70px;
+}
+button{
+    font-family: "Poppins", sans-serif;
+}
+
+.hero-section{
+    width: 100%;
+    height: 903px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+}
+h1{
+    font-size: 96px;
+    color: #1E293B;
+    line-height: 100px;
+    margin-bottom: 35px;
+}
+.tagline-desc{
+    font-style: italic;
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 80px;
+  
+}
+.explore-btn{
+    font-size: 20px;
+    width: 195px;
+    height: 62px;
+    background-color: #2D89FF;
+    border: 0cm;
+    border-radius: 15px;
+    color: #FFFFFF;
+    font-weight: bolder;
+    
+}
+.hero-txt{
+    padding-left:55px ;
+    padding-top: 40px;
+}
+.content-container{
+    width: 100%;
+    height: 980px;
+    background-color: #fafafa;
+}
+.section-title {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: #333333; /* Adjust color */
+    position: relative;
+    padding: 93px 0px 93px 0px;
+    margin-top: 75px;
+}
+.section-title span{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+.section-title::before,
+.section-title::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    width: 624px;
+    background-color: #1E293B;
+    margin: 0 112px; 
+}
+.blogs-row{
+    margin: 0px 126px 0px 126px;
+    display: flex;
+    justify-content: center;
+    gap: 89px;
+}
+
+.allblogs-row{
+    margin: 0px 126px 0px 126px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    column-gap: 89px;
+    row-gap: 165px;
+    
+}
+
+
+
+
+.blog{
+    width: 350px;
+    height: 450px;
+    background-color: #FAFAFA;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.two{
+    margin: 0px 89px 0px 89px;
+}
+.three{
+    margin: 0px 89px 0px 0px;
+}
+.blog-img{
+    width: 350px;
+    height: 273px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+.btn{
+    color: #FFFFFF;
+    font-size: 16px;
+    width: auto;
+    padding: 0 14px 0 14px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 0;
+    margin: 0px 0px 21px 14px;
+    white-space: nowrap;
+    background-color: #2D89FF;
+}
+#seemore-btn{
+    background-color: #2D89FF;
+    margin-bottom: 0;
+ 
+}
+.edit-del{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+.edit-del a{
+    color: #2D89FF ;
+    margin-right: 10px;
+}
+.blog-date{
+    color: #1E293B;
+    font-size: 12px;
+    margin: 9px 0px 8px 14px;
+}
+.blog-title{
+    color: #1E293B;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+    margin: 0px 35px 32px 14px;
+}
+#blog-title{
+    color: #1E293B;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+    margin: 0px 0px 32px 14px;
+}
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    position: relative;
+    padding: 93px 0px 93px 0px;
+}
+.star-container{
+    display: flex;
+}
+.star{
+    width: 39px;
+    height: 45px;
+}
+#star{
+    width: 39px;
+    height: 45px;
+    margin: 0px 48px 0px 48px;
+}
+.section-divider {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: #FAFAFA; /* Adjust color */
+    position: relative;
+    padding: 148px 0px 161px 0px;
+}
+.section-divider::before,
+.section-divider::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    width: 624px;
+    background-color: #1E293B;
+    margin: 0 112px; 
+}
+
+.delete{
+    background-color: transparent;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+    margin-right: 10px;
+    color: #2D89FF;
+}

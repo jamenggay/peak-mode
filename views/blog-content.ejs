@@ -1,0 +1,47 @@
+
+
+<%- include("partials/navbar.ejs") %>
+    <div class="blog-content-container">
+        <div class="detail-container">
+            <h1 class="content-title">
+                <%= blog.title %>
+            </h1>
+            <p class="date-author">
+                <%= new Date(blog.date).toLocaleDateString("en-US", { year: "numeric" , month: "long" , day: "numeric"
+                    }) %> | By: <span class="content-author"><%= blog.fname %> <%= blog.lname %></span> 
+            </p>
+            <img class="blog-content-img" src="<%= blog.image %>" alt="Blog Image" />
+            
+            <div class="blog-body">
+                <%- blog.content %>
+            </div>
+
+        </div>
+        <div class="other-blogs">
+            <p>Other Blogs</p>
+            <div class="blogs-column">
+                <% otherBlogs.forEach(function(blog) { %>
+                  <div class="blog">
+                    <img class="blog-img" src="<%= blog.image %>" alt="Blog Image"/>
+                    <p class="blog-date"><%= new Date(blog.date).toLocaleDateString("en-US", {
+                      year: "numeric", month: "long", day: "numeric"
+                    }) %></p>
+                    <p class="blog-title"><%= blog.title %></p> 
+                    <a href="/blog/<%= blog.id %>">
+                      <button class="btn">SEE MORE</button>
+                    </a>      
+                  </div>
+                <% }); %>
+              </div>
+        </div>
+    </div>
+    <div class="section-divider">
+        <div class="star-container">
+          <img class="star" src="/images/star.png" />
+          <img id="star" src="/images/star.png" />
+          <img class="star" src="/images/star.png" />
+        </div>
+      </div>
+    </div>
+
+    <%- include("partials/footer.ejs") %>

@@ -1,0 +1,115 @@
+
+.submit-form{
+    width: 1021px;
+    height: 1262px;
+    background-color: #FAFAFA;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+}
+.update-form{
+  width: 1021px;
+  height: 1400px;
+  background-color: #FAFAFA;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+
+}
+.form-inst{
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 49px 0px 43px 66px;
+    letter-spacing: 2px;
+}
+.label{
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 66px ;
+    letter-spacing: 1px;
+}
+.title{
+  margin-right: 129px;
+}.name{
+  margin-right: 56px;
+}
+.date{
+  margin-right: 24px;
+}
+.file{
+  margin-right: 44px;
+}
+.blogcontent{
+  margin-right: 58px;
+}
+.input{
+    width: 340px;
+    height: 25px;
+}
+.author-name {
+    display: flex;
+    margin-bottom: 28px;
+  }
+
+  .row .half {
+    flex: 1;
+  }
+  .title-form{
+    display: flex;
+    margin-bottom: 28px;
+  }
+  .name-label{
+    font-size: 12px;
+    font-weight: 200px;
+    font-family: "Inter", sans-serif;
+    margin: 11px 0 0 0;
+  }
+  .editor-container{
+    display: flex;
+    flex-direction: column;
+  }
+  #editor{
+    width: 671px;
+      height: 663px;
+  }
+  #content{
+    width: 671px;
+    height: 663px;
+  }
+.blog-form{
+    display: flex;
+    align-items: flex-start;
+}
+.submit-btn{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    width: 120px;
+    height: 55px;
+    background-color: #2d89ff;
+    border: 0;
+    border-radius: 15px;
+    align-self: center;
+}
+.upload-form{
+  margin: 28px 0 28px 0;
+  display: flex;
+  flex-direction: row;
+}
+.submit-btn{
+  margin-top: 84px;
+  border: 0;
+}
+.last-name{
+  margin-left: 35px;
+}
+.image-upload{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

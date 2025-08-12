@@ -1,0 +1,75 @@
+<%- include("partials/navbar.ejs") %>
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet">
+
+
+    <div class="section-title about">
+        <span>SUBMIT YOUR ENTRY</span>
+    </div>
+
+    <form class="submit-form" action="/submit" method="POST" enctype="multipart/form-data">
+        <h2 class="form-inst">KINDLY F-ILL OUT THE FOLLOWING INFORMATION</h2>
+
+        <div class="title-form">
+            <label for="title" class="label title">Title</label>
+            <input class="input" id="int-title" type="text" name="title" required />
+        </div>
+
+        <div class="author-name">
+            <label class="label name">Author Name</label>
+            <div class="half">
+                <div class="first-name">
+                    <input class="input" type="text" name="Fname" required>
+                    <p class="name-label">First name</p>
+                </div>
+
+            </div>
+            <div class="half">
+                <div class="last-name">
+                    <input class="input" type="text" name="Lname" required>
+                    <p class="name-label">Last name</p>
+                </div>
+            </div>
+        </div>
+        <div class="publication-form">
+            <label for="publicationDate" class="label date">Publication Date</label>
+            <input class="input" id="int-date" type="date" name="publicationDate" required />
+        </div>
+        <div class="upload-form">
+            <label for="uploadFile" class="label file">Feature Image</label>
+            <input class="input" id="int-file" type="file" name="featureImage" required />
+        </div>
+
+        <div class="blog-form">
+            <label for="blogContent" class="label blogcontent">Blog Content</label>
+            <div class="editor-container">
+                <div id="editor"></div>
+                <input type="hidden" name="content" id="content">
+            </div>
+
+        </div>
+
+        <input class="submit-btn" type="submit" value="SUBMIT" />
+
+    </form>
+
+    <div class="section-divider">
+        <div class="star-container">
+            <img class="star" src="/images/star.png" />
+            <img id="star" src="/images/star.png" />
+            <img class="star" src="/images/star.png" />
+        </div>
+    </div>
+
+    <script>
+        const quill = new Quill('#editor', {
+            theme: 'snow'
+        });
+        document.querySelector("form").addEventListener('submit', function(e) {
+    const htmlContent = quill.root.innerHTML;
+    document.querySelector("#content").value = htmlContent;
+  });
+    </script>
+
+
+    <%- include ("partials/footer.ejs") %>

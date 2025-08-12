@@ -1,0 +1,30 @@
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-logo{
+    width: 440px;
+    height: 424px;
+    margin-bottom: 70px;
+}
+.contact-heading1{
+    font-size: 64px;
+    color: #1E293B;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+.contact-par{
+    margin: 0 0 129px;
+    text-align: center;
+    font-size: 32px;
+    color: #000000;
+}
+.contact-heading2{
+    font-size: 38px;
+    color: #1E293B;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 0 29px;
+}
